@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <title>Drupal trainee</title>
 </head>
@@ -22,11 +22,12 @@
                     <a class="nav-link" href="todo.php">Todo</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Unknown page</a>
+                    <a class="nav-link" href="logout.php?logout=true">Logout</a>
+
                 </li>
             </ul>
             <span class="navbar-text">
-                Drupal HomeWork
+                Welcome <?php echo ucfirst($_SESSION['first_name']); ?>
             </span>
         </div>
     </nav>
